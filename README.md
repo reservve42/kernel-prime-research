@@ -141,19 +141,15 @@ This repository is licensed under the **GNU Lesser General Public License v2.1 (
 g++ -O2 cpp/main.cpp cpp/core/bigint.cpp cpp/core/prime.cpp -o prime_cpp
 ./prime_cpp
 ```
-
-```bash
-gfortran fortran/main.f90 fortran/modules/bigint_m``` 
 ### Fortran
 
-```bashime_mod.f90 -o prime_fortran
+```bash
+gfortran fortran/main.f90 fortran/modules/bigint_mod.f90 fortran/modules/prime_mod.f90 -o prime_fortran
 ./prime_fortran
 ```
 ### Docker
 
 ```bash
 docker build -t prime-kernel-research ./docker
-docke```
-
-un -it prime-kernel-research
+docker run -it prime-kernel-research
 ```
