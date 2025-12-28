@@ -1,4 +1,4 @@
-# prime-kernel-research
+# Self Research Prime Kernel applied to Cryptography at all for dummies and self-taught like me
 
 ## Overview
 
