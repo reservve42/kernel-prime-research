@@ -1,0 +1,17 @@
+FROM gentoo/portage:latest
+
+# install essentials
+RUN emerge --sync && emerge dev-lang/gcc dev-lang/gfortran
+
+# copy repo
+WORKDIR /opt/research
+COPY ../cpp ./cpp
+COPY ../fortran ./fortran
+COPY ../experiments ./experiments
+
+# build scripts
+RUN g++ -O2 cpp/main.cpp cpp/core/bigint.cpp -o prime_cpp
+RUN gfortran fortran/main.f90 fortran/modules/bigint_mod.f90 fortran/modules/prime_mod.f90 -o prime_fortran
+
+ENTRYPOINT ["/bin/bash"]
+
