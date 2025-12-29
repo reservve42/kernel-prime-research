@@ -1,5 +1,5 @@
-#include "prime.h"
-#include "bigint.h"
+#include "C_prime.h"
+#include "C_bigint.h"
 #include <cstdio>
 
 int main() {
