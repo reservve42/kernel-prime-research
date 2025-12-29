@@ -18,7 +18,7 @@
  * Redistribution and modification are allowed under GPL-2.0-or-later.
  */
 
-#include "bigint.h"
+#include "C_bigint.h"
 
 BigInt::BigInt(uint64_t n) {
     while (n) {
