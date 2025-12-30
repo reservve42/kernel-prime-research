@@ -1,6 +1,6 @@
 #include <chrono>
 #include <cstdio>
-#include "../cpp/include/prime.h"
+#include "C_prime.h"
 
 int main() {
     uint64_t numbers[] = {1000003, 1000033, 1000037};
