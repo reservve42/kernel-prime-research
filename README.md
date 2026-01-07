@@ -1,4 +1,4 @@
-# Self Research Prime Kernel applied to Cryptography at all for dummies and self-taught like me
+# Ramanujan-Inspired Heuristics for Prime Complexity and Cryptographic Kernels
 
 ## Overview
 
